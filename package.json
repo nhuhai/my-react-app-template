@@ -11,6 +11,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .js,.jsx"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
   }
 }
